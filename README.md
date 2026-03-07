@@ -1,4 +1,4 @@
-# Urdu Transcriber
+# Transcriber using Whisper
 
 A desktop application for transcribing audio and video files using [Faster-Whisper](https://github.com/guillaumekynast/faster-whisper), with a PyQt6 GUI. Supports live transcription output, multiple languages, and adjustable performance settings.
 
