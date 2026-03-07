@@ -1,0 +1,15 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# AI Models (They are huge, don't upload them!)
+models/
+~/.cache/whisper/
+
+# macOS system files
+.DS_Store
