@@ -12,7 +12,7 @@ from PyQt6.QtCore import Qt, QThread, pyqtSignal, QObject
 from PyQt6.QtGui import QIntValidator, QTextCursor
 
 import whisper_engine  # Import our engine file
-
+from faster_whisper import available_models
 
 # ── Whisper supported languages (display name → Whisper language code) ────────
 
@@ -244,7 +244,14 @@ class AppGUI(QMainWindow):
 
         settings_row.addWidget(self._make_label("Model"))
         self.combo_model = QComboBox()
-        self.combo_model.addItems(["tiny", "small", "medium", "large"])
+        # Dynamically fetch the list from the library
+        models_list = available_models()
+
+        # Sort them if you want a cleaner UI
+        models_list.sort()
+        # Populate the list
+        self.combo_model.addItems(models_list)
+        #self.combo_model.addItems(["tiny", "small", "medium", "large"])
         self.combo_model.setCurrentText("small")
         self.combo_model.setFixedHeight(34)
         self.combo_model.setMinimumWidth(110)
