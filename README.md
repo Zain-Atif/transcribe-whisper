@@ -130,6 +130,18 @@ Output is saved as a `.txt` file in the same folder as the input file.
 `mp3`, `wav`, `mp4`, `m4a`, `ogg`, `flac`
 
 ---
+## License and Attribution
+
+This project is licensed under the **MIT License**.
+
+### How to Attribute
+If you use this software in a commercial product, website, or service, please include the following attribution in your "Legal Notices" or "Credits" section:
+
+> **Transcribe-whisper** Copyright (c) 2026 Zain-Atif  
+> Licensed under the MIT License.  
+> Source: [https://github.com/Zain-Atif/Transcribe-whisper](https://github.com/Zain-Atif/Transcribe-whisper)
+
+---
 
 ## Troubleshooting
 
